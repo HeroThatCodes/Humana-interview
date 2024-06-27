@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card-header h3 {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.card-header .hp {
+    color: #ff6961;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.card .stats {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card .stats p {
+    margin: 2px 0;
+}
+
+.stat-height { color: #6a0dad; }
+.stat-weight { color: #ffa500; }
+.stat-attack { color: #ff0000; }
+.stat-defense { color: #1e90ff; }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reasons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reasons h2 {
+    margin: 10px 0;
+}
